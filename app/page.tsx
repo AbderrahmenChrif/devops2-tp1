@@ -50,10 +50,10 @@ export default function Home() {
       <header className="hero">
         <div className="container">
           <div>
-            <div className="eyebrow">Plateforme de questionnaires Â· Site fictif</div>
-            <h1>CrÃ©ez, partagez et analysez vos questionnaires</h1>
+            <div className="eyebrow">Création de questionnaires - Quizzo</div>
+            <h1>Créez facilement vos propres questionnaires</h1>
             <p className="lead">
-              Quizzo vous aide Ã  concevoir des quiz en quelques minutes et Ã  suivre les rÃ©sultats en temps rÃ©el.
+              Concevez vos questionnaires simplement, personnalisez vos questions et préparez-les pour vos participants en quelques minutes.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#commencer">CrÃ©er un questionnaire</a>
