@@ -2,31 +2,31 @@ import { Fragment } from "react";
 import DevOpsLoop from "@/components/DevOpsLoop";
 
 const features = [
-  { title: "Ã‰diteur simple", text: "Questions Ã  choix, rÃ©ponses libres et barÃ¨mes." },
-  { title: "Partage par lien", text: "Un lien ou un QR code suffit pour rÃ©pondre." },
-  { title: "RÃ©sultats en direct", text: "Scores et statistiques mis Ã  jour Ã  chaque rÃ©ponse." },
-  { title: "Export", text: "TÃ©lÃ©chargez les rÃ©ponses en CSV ou PDF." },
-  { title: "Ã‰quipes", text: "Travaillez Ã  plusieurs sur un mÃªme questionnaire." },
+  { title: "Éditeur simple", text: "Questions à choix, réponses libres et barèmes." },
+  { title: "Partage par lien", text: "Un lien ou un QR code suffit pour répondre." },
+  { title: "Résultats en direct", text: "Scores et statistiques mis à jour à chaque réponse." },
+  { title: "Export", text: "Téléchargez les réponses en CSV ou PDF." },
+  { title: "Équipes", text: "Travaillez à plusieurs sur un même questionnaire." },
 ];
 
 const steps = [
-  { title: "Concevoir", text: "RÃ©digez vos questions dans l'Ã©diteur." },
+  { title: "Concevoir", text: "Rédigez vos questions dans l'éditeur." },
   { title: "Diffuser", text: "Partagez le lien avec vos participants." },
-  { title: "Analyser", text: "Consultez les rÃ©sultats et exportez-les." },
+  { title: "Analyser", text: "Consultez les résultats et exportez-les." },
 ];
 
 const stack = [
   "Front-end Next.js",
   "API Strapi et base PostgreSQL",
   "Conteneurs Docker et Compose",
-  "Pipeline CI/CD Ã  chaque commit",
+  "Pipeline CI/CD à chaque commit",
 ];
 
 const tiles = [
-  { kind: "accent", title: "CÃ´tÃ© Dev", text: "Planifier, coder, construire et tester." },
-  { kind: "ops", title: "CÃ´tÃ© Ops", text: "Livrer, dÃ©ployer, exploiter et surveiller." },
-  { kind: "good", title: "Bonne pratique", text: "Chaque modification passe par une revue et des tests automatisÃ©s." },
-  { kind: "warn", title: "Attention", text: "Ceci est un site fictif crÃ©Ã© pour un TP : aucun service rÃ©el n'est proposÃ©." },
+  { kind: "accent", title: "Côté Dev", text: "Planifier, coder, construire et tester." },
+  { kind: "ops", title: "Côté Ops", text: "Livrer, déployer, exploiter et surveiller." },
+  { kind: "good", title: "Bonne pratique", text: "Chaque modification passe par une revue et des tests automatisés." },
+  { kind: "warn", title: "Attention", text: "Ceci est un site fictif créé pour un TP : aucun service réel n'est proposé." },
 ];
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
             Quizzo
           </a>
           <ul className="nav-links">
-            <li><a href="#fonctionnalites">FonctionnalitÃ©s</a></li>
+            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
             <li><a href="#fonctionnement">Fonctionnement</a></li>
             <li><a href="#technique">Technique</a></li>
           </ul>
@@ -56,10 +56,10 @@ export default function Home() {
               Concevez vos questionnaires simplement, personnalisez vos questions et préparez-les pour vos participants en quelques minutes.
             </p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#commencer">CrÃ©er un questionnaire</a>
-              <a className="btn btn-ghost" href="#fonctionnement">Voir comment Ã§a marche</a>
+              <a className="btn btn-primary" href="#commencer">Créer un questionnaire</a>
+              <a className="btn btn-ghost" href="#fonctionnement">Voir comment ça marche</a>
             </div>
-            <span className="pill">DevOps 2 Â· TP1</span>
+            <span className="pill">DevOps 2 · TP1</span>
           </div>
           <DevOpsLoop className="loop" />
         </div>
@@ -68,8 +68,8 @@ export default function Home() {
       <section id="fonctionnalites">
         <div className="container">
           <div className="section-head">
-            <h2>FonctionnalitÃ©s</h2>
-            <p>Tout ce qu'il faut pour mener une Ã©valuation de bout en bout.</p>
+            <h2>Fonctionnalités</h2>
+            <p>Tout ce qu'il faut pour mener une évaluation de bout en bout.</p>
           </div>
           <div className="cards">
             {features.map((f, i) => (
@@ -86,13 +86,13 @@ export default function Home() {
       <section id="fonctionnement" className="section-surface">
         <div className="container">
           <div className="section-head">
-            <h2>Comment Ã§a marche</h2>
-            <p>Trois Ã©tapes, de l'idÃ©e aux rÃ©sultats.</p>
+            <h2>Comment ça marche</h2>
+            <p>Trois étapes, de l'idée aux résultats.</p>
           </div>
           <div className="steps">
             {steps.map((s, i) => (
               <Fragment key={s.title}>
-                {i > 0 && <div className="arrow" aria-hidden="true">â†’</div>}
+                {i > 0 && <div className="arrow" aria-hidden="true">→</div>}
                 <div className="step">
                   <div className="circle">{i + 1}</div>
                   <h3>{s.title}</h3>
@@ -101,7 +101,7 @@ export default function Home() {
               </Fragment>
             ))}
           </div>
-          <div className="banner">Un questionnaire prÃªt Ã  diffuser en moins de 5 minutes.</div>
+          <div className="banner">Un questionnaire prêt à diffuser en moins de 5 minutes.</div>
         </div>
       </section>
 
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <h2>Sous le capot</h2>
-            <p>Une stack moderne, livrÃ©e en continu.</p>
+            <p>Une stack moderne, livrée en continu.</p>
           </div>
           <div className="split">
             <pre className="code">
@@ -142,16 +142,16 @@ export default function Home() {
       <section id="commencer" className="quote">
         <DevOpsLoop className="watermark" watermark />
         <div className="container">
-          <blockquote>Â« Une bonne question vaut mieux qu'une longue rÃ©ponse. Â»</blockquote>
+          <blockquote>« Une bonne question vaut mieux qu'une longue réponse. »</blockquote>
           <div className="actions">
-            <a className="btn btn-white" href="#">CrÃ©er mon premier quiz</a>
+            <a className="btn btn-white" href="#">Créer mon premier quiz</a>
           </div>
         </div>
       </section>
 
       <footer>
         <div className="container">
-          <span>Quizzo Â· Site fictif rÃ©alisÃ© pour DevOps 2 â€” TP1</span>
+          <span>Quizzo · Site fictif réalisé pour DevOps 2 — TP1</span>
           <span>&copy; 2026</span>
         </div>
       </footer>
